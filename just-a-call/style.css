@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Verdana, 'open sans' sans-serif;
+  /* background-image: linear-gradient(135deg, #458a9a 30%, #b2ffd2d4 60% ); */
+  background-image: linear-gradient(270deg, #23464d 20%, #b2ffd2d4 70%);
+
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 50px;
+ 
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+}
+
+.nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+  margin: 50px;
+  list-style: none;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  /* color: #b2ffd2d4; */
+  color: #01160ad4;
+}
+
+.nav a:hover {
+  color: brown;
+  text-decoration: underline;
+}
+
+.hero {
+  position: relative;
+  height: 620px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.slider {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 500%;
+  animation: slideImages 20s infinite;
+}
+
+.slider img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+
+.hero h2,
+.hero button {
+  position: relative;
+  z-index: 2;
+  color: black;
+  
+}
+
+.hero button {
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  width: 500px;
+  height: 100px;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #b2ffd2d4;
+}
+
+.hero h2 {
+  color: #b2ffd2d4;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+@keyframes slideImages {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(0); }
+  25%  { transform: translateX(-100vw); }
+  45%  { transform: translateX(-100vw); }
+  50%  { transform: translateX(-200vw); }
+  70%  { transform: translateX(-200vw); }
+  75%  { transform: translateX(-300vw); }
+  95%  { transform: translateX(-300vw); }
+  100% { transform: translateX(-400vw); } 
+}
