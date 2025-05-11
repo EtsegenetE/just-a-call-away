@@ -1,9 +1,7 @@
 body {
   margin: 0;
-  font-family: Verdana, 'open sans' sans-serif;
-  /* background-image: linear-gradient(135deg, #458a9a 30%, #b2ffd2d4 60% ); */
+  font-family: Verdana, "open sans" sans-serif;
   background-image: linear-gradient(270deg, #23464d 20%, #b2ffd2d4 70%);
-
 }
 
 .logo img {
@@ -11,7 +9,6 @@ body {
   height: 100px;
   margin-top: 20px;
   margin-left: 50px;
- 
 }
 
 .nav {
@@ -33,7 +30,6 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
-  /* color: #b2ffd2d4; */
   color: #01160ad4;
 }
 
@@ -86,7 +82,6 @@ body {
   position: relative;
   z-index: 2;
   color: black;
-  
 }
 
 .hero button {
@@ -102,6 +97,10 @@ body {
   background-color: #b2ffd2d4;
 }
 
+.hero button:hover {
+  color: brown;
+}
+
 .hero h2 {
   color: #b2ffd2d4;
   font-weight: bold;
@@ -109,13 +108,31 @@ body {
 }
 
 @keyframes slideImages {
-  0%   { transform: translateX(0); }
-  20%  { transform: translateX(0); }
-  25%  { transform: translateX(-100vw); }
-  45%  { transform: translateX(-100vw); }
-  50%  { transform: translateX(-200vw); }
-  70%  { transform: translateX(-200vw); }
-  75%  { transform: translateX(-300vw); }
-  95%  { transform: translateX(-300vw); }
-  100% { transform: translateX(-400vw); } 
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100vw);
+  }
+  45% {
+    transform: translateX(-100vw);
+  }
+  50% {
+    transform: translateX(-200vw);
+  }
+  70% {
+    transform: translateX(-200vw);
+  }
+  75% {
+    transform: translateX(-300vw);
+  }
+  95% {
+    transform: translateX(-300vw);
+  }
+  100% {
+    transform: translateX(-400vw);
+  }
 }
